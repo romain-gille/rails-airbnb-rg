@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Hello from './components/hello'
+import {Navbar} from './components/navbar.tsx'
+import {IntroBanner} from './components/introBanner.tsx'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Hello />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+
+
+ReactDOM.render(<Navbar />, document.getElementById('nav'));
+ReactDOM.render(<IntroBanner />, document.getElementById('content'));
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
